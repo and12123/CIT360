@@ -1,15 +1,21 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package CIT360;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
-import java.util.*;
-
-public class list {
-
-    /**
-     * @param args the command line arguments
-     */
+/**
+ *
+ * @author Alyssa
+ */
+public class List1 {
     public static void main(String[] args) {
-        // TODO code application logic here
         
         List gunList = new ArrayList();
         List list2 = new ArrayList();
@@ -37,7 +43,7 @@ public class list {
             System.out.println(obj);
         }
         
-        System.out.println("Let's remove Kel-Tec from the list");
+        System.out.println("Remove Kel-Tec from the list");
         
         for (int i = 0; i < gunList.size(); i++) {
             Object obj = gunList.get(i);
@@ -47,9 +53,9 @@ public class list {
         }
         System.out.println("\t" + gunList);
         
-        System.out.println("Let's add Kel-Tec from the list");
+        System.out.println("Add Kel-Tec to the list");
         
-        for (int i = 0; i < gunList.size(); i++) {
+        for (int i = 6; i < gunList.size(); i++) {
             Object obj = gunList.get(i);
             if (obj != "Kel-Tec") {
                 gunList.add("Kel-Tec");
@@ -64,7 +70,6 @@ public class list {
             newLinkedList.add(obj);
         }
         
-        System.out.println();
         System.out.println();
         
         System.out.println("newLinkedList");
