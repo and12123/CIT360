@@ -1,4 +1,4 @@
-package CIT360;
+package JavaCollections;
 import java.util.*;
 
 public class Set {
